@@ -9,19 +9,23 @@
 /* Begin PBXBuildFile section */
 		15C16D0D8699EC2A1762918D /* Pods_CodableSaveLoad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3937CA5F6D4329B7EA2E387D /* Pods_CodableSaveLoad.framework */; };
 		D063665222E86439003B2033 /* CodableSaveLoad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D063664822E86438003B2033 /* CodableSaveLoad.framework */; };
-		D063665722E86439003B2033 /* CodableSaveLoadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D063665622E86439003B2033 /* CodableSaveLoadTests.swift */; };
 		D063665922E86439003B2033 /* CodableSaveLoad.h in Headers */ = {isa = PBXBuildFile; fileRef = D063664B22E86438003B2033 /* CodableSaveLoad.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D07129B422E8678F00B4E56D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07129B322E8678F00B4E56D /* AppDelegate.swift */; };
 		D07129B622E8678F00B4E56D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07129B522E8678F00B4E56D /* ViewController.swift */; };
 		D07129B922E8678F00B4E56D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D07129B722E8678F00B4E56D /* Main.storyboard */; };
 		D07129BB22E8679000B4E56D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D07129BA22E8679000B4E56D /* Assets.xcassets */; };
 		D07129BE22E8679000B4E56D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D07129BC22E8679000B4E56D /* LaunchScreen.storyboard */; };
-		D07129C622E8681400B4E56D /* TestDummy.json in Resources */ = {isa = PBXBuildFile; fileRef = D07129C522E8681300B4E56D /* TestDummy.json */; };
+		D07129C622E8681400B4E56D /* Dummy.json in Resources */ = {isa = PBXBuildFile; fileRef = D07129C522E8681300B4E56D /* Dummy.json */; };
 		D07129C822E8688E00B4E56D /* Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07129C722E8688E00B4E56D /* Load.swift */; };
 		D07129CA22E868AD00B4E56D /* Save.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07129C922E868AD00B4E56D /* Save.swift */; };
 		D07129CC22E868FF00B4E56D /* Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07129CB22E868FF00B4E56D /* Delete.swift */; };
-		D07129CE22E8694F00B4E56D /* UrlCreators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07129CD22E8694F00B4E56D /* UrlCreators.swift */; };
+		D07129CE22E8694F00B4E56D /* CreateURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07129CD22E8694F00B4E56D /* CreateURL.swift */; };
 		D07129D022E86DA600B4E56D /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07129CF22E86DA600B4E56D /* Errors.swift */; };
+		D96F812A22E8E3C000FE637E /* LoadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F812922E8E3C000FE637E /* LoadTests.swift */; };
+		D96F812C22E8E3E700FE637E /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F812B22E8E3E700FE637E /* Dummy.swift */; };
+		D96F812E22E8E42A00FE637E /* BaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F812D22E8E42A00FE637E /* BaseTests.swift */; };
+		D96F813022E8E4BD00FE637E /* SaveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F812F22E8E4BD00FE637E /* SaveTests.swift */; };
+		D96F813222E8E57400FE637E /* RemoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F813122E8E57400FE637E /* RemoveTests.swift */; };
 		EC39ACD16458CC50EFC44D6A /* Pods_CodableSaveLoadTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CCB08A26F20559E5F1C69B /* Pods_CodableSaveLoadTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,7 +54,6 @@
 		D063664B22E86438003B2033 /* CodableSaveLoad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodableSaveLoad.h; sourceTree = "<group>"; };
 		D063664C22E86438003B2033 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D063665122E86439003B2033 /* CodableSaveLoadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodableSaveLoadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D063665622E86439003B2033 /* CodableSaveLoadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableSaveLoadTests.swift; sourceTree = "<group>"; };
 		D063665822E86439003B2033 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D07129B122E8678F00B4E56D /* Host.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Host.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D07129B322E8678F00B4E56D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,12 +62,17 @@
 		D07129BA22E8679000B4E56D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D07129BD22E8679000B4E56D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D07129BF22E8679000B4E56D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D07129C522E8681300B4E56D /* TestDummy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestDummy.json; sourceTree = "<group>"; };
+		D07129C522E8681300B4E56D /* Dummy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Dummy.json; sourceTree = "<group>"; };
 		D07129C722E8688E00B4E56D /* Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Load.swift; sourceTree = "<group>"; };
 		D07129C922E868AD00B4E56D /* Save.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Save.swift; sourceTree = "<group>"; };
 		D07129CB22E868FF00B4E56D /* Delete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delete.swift; sourceTree = "<group>"; };
-		D07129CD22E8694F00B4E56D /* UrlCreators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlCreators.swift; sourceTree = "<group>"; };
+		D07129CD22E8694F00B4E56D /* CreateURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateURL.swift; sourceTree = "<group>"; };
 		D07129CF22E86DA600B4E56D /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		D96F812922E8E3C000FE637E /* LoadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadTests.swift; sourceTree = "<group>"; };
+		D96F812B22E8E3E700FE637E /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
+		D96F812D22E8E42A00FE637E /* BaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTests.swift; sourceTree = "<group>"; };
+		D96F812F22E8E4BD00FE637E /* SaveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveTests.swift; sourceTree = "<group>"; };
+		D96F813122E8E57400FE637E /* RemoveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveTests.swift; sourceTree = "<group>"; };
 		DC0DE36E0E850679DDEF2A7B /* Pods-CodableSaveLoad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodableSaveLoad.debug.xcconfig"; path = "Target Support Files/Pods-CodableSaveLoad/Pods-CodableSaveLoad.debug.xcconfig"; sourceTree = "<group>"; };
 		E0E9101C25B6302D5E4D6863 /* Pods-CodableSaveLoadTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodableSaveLoadTests.debug.xcconfig"; path = "Target Support Files/Pods-CodableSaveLoadTests/Pods-CodableSaveLoadTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EDA383B416094437CD7B726D /* Pods-CodableSaveLoadTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodableSaveLoadTests.release.xcconfig"; path = "Target Support Files/Pods-CodableSaveLoadTests/Pods-CodableSaveLoadTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,7 +155,7 @@
 				D07129C722E8688E00B4E56D /* Load.swift */,
 				D07129C922E868AD00B4E56D /* Save.swift */,
 				D07129CB22E868FF00B4E56D /* Delete.swift */,
-				D07129CD22E8694F00B4E56D /* UrlCreators.swift */,
+				D07129CD22E8694F00B4E56D /* CreateURL.swift */,
 				D07129CF22E86DA600B4E56D /* Errors.swift */,
 				D063664C22E86438003B2033 /* Info.plist */,
 			);
@@ -157,8 +165,12 @@
 		D063665522E86439003B2033 /* CodableSaveLoadTests */ = {
 			isa = PBXGroup;
 			children = (
-				D063665622E86439003B2033 /* CodableSaveLoadTests.swift */,
-				D07129C522E8681300B4E56D /* TestDummy.json */,
+				D96F812922E8E3C000FE637E /* LoadTests.swift */,
+				D96F812F22E8E4BD00FE637E /* SaveTests.swift */,
+				D96F813122E8E57400FE637E /* RemoveTests.swift */,
+				D96F812D22E8E42A00FE637E /* BaseTests.swift */,
+				D96F812B22E8E3E700FE637E /* Dummy.swift */,
+				D07129C522E8681300B4E56D /* Dummy.json */,
 				D063665822E86439003B2033 /* Info.plist */,
 			);
 			path = CodableSaveLoadTests;
@@ -303,7 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D07129C622E8681400B4E56D /* TestDummy.json in Resources */,
+				D07129C622E8681400B4E56D /* Dummy.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,7 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D07129CE22E8694F00B4E56D /* UrlCreators.swift in Sources */,
+				D07129CE22E8694F00B4E56D /* CreateURL.swift in Sources */,
 				D07129CA22E868AD00B4E56D /* Save.swift in Sources */,
 				D07129CC22E868FF00B4E56D /* Delete.swift in Sources */,
 				D07129D022E86DA600B4E56D /* Errors.swift in Sources */,
@@ -400,7 +412,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D063665722E86439003B2033 /* CodableSaveLoadTests.swift in Sources */,
+				D96F812E22E8E42A00FE637E /* BaseTests.swift in Sources */,
+				D96F812C22E8E3E700FE637E /* Dummy.swift in Sources */,
+				D96F813022E8E4BD00FE637E /* SaveTests.swift in Sources */,
+				D96F812A22E8E3C000FE637E /* LoadTests.swift in Sources */,
+				D96F813222E8E57400FE637E /* RemoveTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,7 @@
 <h2 class="cov_title">
 <span>Coverage for "Delete.swift" : </span><span class="cov_high">100.00%</span>
 </h2>
-<h4 class="cov_subtitle">(15 of 15 relevant lines covered)</h4>
+<h4 class="cov_subtitle">(19 of 19 relevant lines covered)</h4>
 <h4 class="cov_filepath">CodableSaveLoad/Delete.swift</h4>
 <table class="source_code">
 <tr class="never">
@@ -37,108 +37,123 @@
 <td class="src"><pre><code class="objc">    </code></pre></td>
 <td class="coverage"></td>
 </tr>
-<tr class="never">
+<tr class="covered">
 <td class="num">6</td>
-<td class="src"><pre><code class="objc">    @discardableResult static func delete(</code></pre></td>
-<td class="coverage"></td>
+<td class="src"><pre><code class="objc">    @discardableResult public static func delete(url: URL, queue: DispatchQueue = .global(qos: .default))  -&gt; Promise&lt;Void&gt; {</code></pre></td>
+<td class="coverage">4x</td>
 </tr>
-<tr class="never">
+<tr class="covered">
 <td class="num">7</td>
-<td class="src"><pre><code class="objc">        name: String = "\(Self.self)",</code></pre></td>
-<td class="coverage"></td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage">4x</td>
 </tr>
-<tr class="never">
+<tr class="covered">
 <td class="num">8</td>
-<td class="src"><pre><code class="objc">        extention: String = "json",</code></pre></td>
-<td class="coverage"></td>
+<td class="src"><pre><code class="objc">        guard url.isFileURL else {</code></pre></td>
+<td class="coverage">4x</td>
 </tr>
-<tr class="never">
+<tr class="covered">
 <td class="num">9</td>
-<td class="src"><pre><code class="objc">        urlCreator: (String, String) throws -&gt; URL = documentUrl(name:extention:),</code></pre></td>
-<td class="coverage"></td>
-</tr>
-<tr class="never">
-<td class="num">10</td>
-<td class="src"><pre><code class="objc">        queue: DispatchQueue = .global(qos: .default)</code></pre></td>
-<td class="coverage"></td>
-</tr>
-<tr class="covered">
-<td class="num">11</td>
-<td class="src"><pre><code class="objc">        )  -&gt; Promise&lt;Void&gt; {</code></pre></td>
-<td class="coverage">12x</td>
-</tr>
-<tr class="covered">
-<td class="num">12</td>
-<td class="src"><pre><code class="objc">        </code></pre></td>
-<td class="coverage">12x</td>
-</tr>
-<tr class="covered">
-<td class="num">13</td>
-<td class="src"><pre><code class="objc">        return Promise&lt;URL&gt; { seal in</code></pre></td>
-<td class="coverage">12x</td>
-</tr>
-<tr class="covered">
-<td class="num">14</td>
-<td class="src"><pre><code class="objc">            let url = try urlCreator(name, extention)</code></pre></td>
-<td class="coverage">12x</td>
-</tr>
-<tr class="covered">
-<td class="num">15</td>
-<td class="src"><pre><code class="objc">            seal.fulfill(url)</code></pre></td>
-<td class="coverage">12x</td>
-</tr>
-<tr class="covered">
-<td class="num">16</td>
-<td class="src"><pre><code class="objc">            }.then { url -&gt; Promise&lt;Void&gt; in</code></pre></td>
-<td class="coverage">12x</td>
-</tr>
-<tr class="covered">
-<td class="num">17</td>
-<td class="src"><pre><code class="objc">                guard url.isFileURL else {</code></pre></td>
-<td class="coverage">12x</td>
-</tr>
-<tr class="covered">
-<td class="num">18</td>
-<td class="src"><pre><code class="objc">                    throw Errors.notFileURL</code></pre></td>
+<td class="src"><pre><code class="objc">            return .init(error: Errors.notFileURL)</code></pre></td>
 <td class="coverage">1x</td>
 </tr>
 <tr class="covered">
+<td class="num">10</td>
+<td class="src"><pre><code class="objc">        }</code></pre></td>
+<td class="coverage">3x</td>
+</tr>
+<tr class="covered">
+<td class="num">11</td>
+<td class="src"><pre><code class="objc">        return queue.async(.promise) {</code></pre></td>
+<td class="coverage">3x</td>
+</tr>
+<tr class="covered">
+<td class="num">12</td>
+<td class="src"><pre><code class="objc">            let manager = FileManager.default</code></pre></td>
+<td class="coverage">3x</td>
+</tr>
+<tr class="covered">
+<td class="num">13</td>
+<td class="src"><pre><code class="objc">            try manager.removeItem(at: url)</code></pre></td>
+<td class="coverage">3x</td>
+</tr>
+<tr class="covered">
+<td class="num">14</td>
+<td class="src"><pre><code class="objc">        }</code></pre></td>
+<td class="coverage">3x</td>
+</tr>
+<tr class="covered">
+<td class="num">15</td>
+<td class="src"><pre><code class="objc">    }</code></pre></td>
+<td class="coverage">4x</td>
+</tr>
+<tr class="never">
+<td class="num">16</td>
+<td class="src"><pre><code class="objc">    </code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="covered">
+<td class="num">17</td>
+<td class="src"><pre><code class="objc">    @discardableResult public static func delete(directory: FileManager.SearchPathDirectory = .documentDirectory, name: String = "\(Self.self)", extention: String = "json", queue: DispatchQueue = .global(qos: .default)) -&gt; Promise&lt;Void&gt; {</code></pre></td>
+<td class="coverage">3x</td>
+</tr>
+<tr class="covered">
+<td class="num">18</td>
+<td class="src"><pre><code class="objc">        do {</code></pre></td>
+<td class="coverage">3x</td>
+</tr>
+<tr class="covered">
 <td class="num">19</td>
-<td class="src"><pre><code class="objc">                }</code></pre></td>
-<td class="coverage">11x</td>
+<td class="src"><pre><code class="objc">            let url = try createURL(from: directory, name: name, extention: extention)</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">20</td>
-<td class="src"><pre><code class="objc">                return queue.async(.promise) {</code></pre></td>
-<td class="coverage">11x</td>
+<td class="src"><pre><code class="objc">            return delete(url: url, queue: queue)</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">21</td>
-<td class="src"><pre><code class="objc">                    let manager = FileManager.default</code></pre></td>
-<td class="coverage">11x</td>
+<td class="src"><pre><code class="objc">        } catch {</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">22</td>
-<td class="src"><pre><code class="objc">                    try manager.removeItem(at: url)</code></pre></td>
-<td class="coverage">11x</td>
-</tr>
-<tr class="covered">
-<td class="num">23</td>
-<td class="src"><pre><code class="objc">                }</code></pre></td>
-<td class="coverage">11x</td>
-</tr>
-<tr class="covered">
-<td class="num">24</td>
-<td class="src"><pre><code class="objc">        }</code></pre></td>
-<td class="coverage">12x</td>
-</tr>
-<tr class="covered">
-<td class="num">25</td>
-<td class="src"><pre><code class="objc">    }</code></pre></td>
-<td class="coverage">12x</td>
+<td class="src"><pre><code class="objc">            return .init(error: error)</code></pre></td>
+<td class="coverage">1x</td>
 </tr>
 <tr class="never">
+<td class="num">23</td>
+<td class="src"><pre><code class="objc">        }</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">24</td>
+<td class="src"><pre><code class="objc">    }</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">25</td>
+<td class="src"><pre><code class="objc">    </code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="covered">
 <td class="num">26</td>
+<td class="src"><pre><code class="objc">    @discardableResult public static func deleteFromCache(name: String = "\(Self.self)", extention: String = "json", queue: DispatchQueue = .global(qos: .default))  -&gt; Promise&lt;Void&gt; {</code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="covered">
+<td class="num">27</td>
+<td class="src"><pre><code class="objc">        return delete(directory: .cachesDirectory, name: name, extention: extention, queue: queue)</code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="covered">
+<td class="num">28</td>
+<td class="src"><pre><code class="objc">    }</code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="never">
+<td class="num">29</td>
 <td class="src"><pre><code class="objc">}</code></pre></td>
 <td class="coverage"></td>
 </tr>

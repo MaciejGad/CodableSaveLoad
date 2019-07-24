@@ -9,7 +9,7 @@
 <h2 class="cov_title">
 <span>Coverage for "Save.swift" : </span><span class="cov_high">100.00%</span>
 </h2>
-<h4 class="cov_subtitle">(10 of 10 relevant lines covered)</h4>
+<h4 class="cov_subtitle">(16 of 16 relevant lines covered)</h4>
 <h4 class="cov_filepath">CodableSaveLoad/Save.swift</h4>
 <table class="source_code">
 <tr class="never">
@@ -34,111 +34,141 @@
 </tr>
 <tr class="never">
 <td class="num">5</td>
-<td class="src"><pre><code class="objc">    @discardableResult func save(</code></pre></td>
+<td class="src"><pre><code class="objc">    </code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
 <td class="num">6</td>
-<td class="src"><pre><code class="objc">        name: String = "\(Self.self)",</code></pre></td>
+<td class="src"><pre><code class="objc">    @discardableResult public func save(url: URL, queue: DispatchQueue = .global(qos: .default), encoder: asEncoder = JSONEncoder()</code></pre></td>
 <td class="coverage"></td>
 </tr>
-<tr class="never">
+<tr class="covered">
 <td class="num">7</td>
-<td class="src"><pre><code class="objc">        extention: String = "json",</code></pre></td>
-<td class="coverage"></td>
+<td class="src"><pre><code class="objc">        )  -&gt; Promise&lt;Void&gt; {</code></pre></td>
+<td class="coverage">13x</td>
 </tr>
-<tr class="never">
+<tr class="covered">
 <td class="num">8</td>
-<td class="src"><pre><code class="objc">        urlCreator: (String, String) throws -&gt; URL = documentUrl(name:extention:),</code></pre></td>
-<td class="coverage"></td>
+<td class="src"><pre><code class="objc">        </code></pre></td>
+<td class="coverage">13x</td>
 </tr>
-<tr class="never">
+<tr class="covered">
 <td class="num">9</td>
-<td class="src"><pre><code class="objc">        queue: DispatchQueue = .global(qos: .default),</code></pre></td>
-<td class="coverage"></td>
+<td class="src"><pre><code class="objc">        return queue.async(.promise) {</code></pre></td>
+<td class="coverage">13x</td>
 </tr>
-<tr class="never">
+<tr class="covered">
 <td class="num">10</td>
-<td class="src"><pre><code class="objc">        encoder: asEncoder = JSONEncoder()</code></pre></td>
-<td class="coverage"></td>
+<td class="src"><pre><code class="objc">            let data = try encoder.encode(self)</code></pre></td>
+<td class="coverage">13x</td>
 </tr>
 <tr class="covered">
 <td class="num">11</td>
-<td class="src"><pre><code class="objc">        )  -&gt; Promise&lt;Void&gt; {</code></pre></td>
-<td class="coverage">12x</td>
+<td class="src"><pre><code class="objc">            try data.write(to: url)</code></pre></td>
+<td class="coverage">13x</td>
 </tr>
 <tr class="covered">
 <td class="num">12</td>
-<td class="src"><pre><code class="objc">        </code></pre></td>
-<td class="coverage">12x</td>
+<td class="src"><pre><code class="objc">        }</code></pre></td>
+<td class="coverage">13x</td>
 </tr>
 <tr class="covered">
 <td class="num">13</td>
-<td class="src"><pre><code class="objc">            return Promise&lt;URL&gt; { seal in</code></pre></td>
-<td class="coverage">12x</td>
+<td class="src"><pre><code class="objc">    }</code></pre></td>
+<td class="coverage">13x</td>
 </tr>
-<tr class="covered">
+<tr class="never">
 <td class="num">14</td>
-<td class="src"><pre><code class="objc">                let url = try urlCreator(name, extention)</code></pre></td>
-<td class="coverage">12x</td>
+<td class="src"><pre><code class="objc">    </code></pre></td>
+<td class="coverage"></td>
 </tr>
 <tr class="covered">
 <td class="num">15</td>
-<td class="src"><pre><code class="objc">                seal.fulfill(url)</code></pre></td>
-<td class="coverage">12x</td>
+<td class="src"><pre><code class="objc">    @discardableResult public func save(directory: FileManager.SearchPathDirectory = .documentDirectory, name: String = "\(Self.self)", extention: String = "json", queue: DispatchQueue = .global(qos: .default), encoder: asEncoder = JSONEncoder())  -&gt; Promise&lt;Void&gt; {</code></pre></td>
+<td class="coverage">13x</td>
 </tr>
 <tr class="covered">
 <td class="num">16</td>
-<td class="src"><pre><code class="objc">                }.map(on: queue) { url in</code></pre></td>
-<td class="coverage">12x</td>
+<td class="src"><pre><code class="objc">        do {</code></pre></td>
+<td class="coverage">13x</td>
 </tr>
 <tr class="covered">
 <td class="num">17</td>
-<td class="src"><pre><code class="objc">                    let data = try encoder.encode(self)</code></pre></td>
-<td class="coverage">12x</td>
+<td class="src"><pre><code class="objc">            let url = try createURL(from: directory, name: name, extention: extention)</code></pre></td>
+<td class="coverage">13x</td>
 </tr>
 <tr class="covered">
 <td class="num">18</td>
-<td class="src"><pre><code class="objc">                    try data.write(to: url)</code></pre></td>
-<td class="coverage">12x</td>
+<td class="src"><pre><code class="objc">            return save(url: url, queue: queue, encoder: encoder)</code></pre></td>
+<td class="coverage">13x</td>
 </tr>
 <tr class="covered">
 <td class="num">19</td>
-<td class="src"><pre><code class="objc">            }</code></pre></td>
-<td class="coverage">12x</td>
+<td class="src"><pre><code class="objc">        } catch {</code></pre></td>
+<td class="coverage">13x</td>
 </tr>
 <tr class="covered">
 <td class="num">20</td>
-<td class="src"><pre><code class="objc">        }</code></pre></td>
-<td class="coverage">12x</td>
+<td class="src"><pre><code class="objc">            return .init(error: error)</code></pre></td>
+<td class="coverage">1x</td>
 </tr>
 <tr class="never">
 <td class="num">21</td>
-<td class="src"><pre><code class="objc">}</code></pre></td>
+<td class="src"><pre><code class="objc">        }</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
 <td class="num">22</td>
-<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="src"><pre><code class="objc">    }</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
 <td class="num">23</td>
-<td class="src"><pre><code class="objc">protocol asEncoder {</code></pre></td>
+<td class="src"><pre><code class="objc">    </code></pre></td>
 <td class="coverage"></td>
 </tr>
-<tr class="never">
+<tr class="covered">
 <td class="num">24</td>
-<td class="src"><pre><code class="objc">    func encode&lt;T&gt;(_ value: T) throws -&gt; Data where T : Encodable</code></pre></td>
-<td class="coverage"></td>
+<td class="src"><pre><code class="objc">    @discardableResult public func saveInCache(name: String = "\(Self.self)", extention: String = "json", queue: DispatchQueue = .global(qos: .default), encoder: asEncoder = JSONEncoder())  -&gt; Promise&lt;Void&gt; {</code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="covered">
+<td class="num">25</td>
+<td class="src"><pre><code class="objc">        return save(directory: .cachesDirectory, name: name, extention: extention, queue: queue, encoder: encoder)</code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="covered">
+<td class="num">26</td>
+<td class="src"><pre><code class="objc">    }</code></pre></td>
+<td class="coverage">1x</td>
 </tr>
 <tr class="never">
-<td class="num">25</td>
+<td class="num">27</td>
 <td class="src"><pre><code class="objc">}</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
-<td class="num">26</td>
+<td class="num">28</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">29</td>
+<td class="src"><pre><code class="objc">public protocol asEncoder {</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">30</td>
+<td class="src"><pre><code class="objc">    func encode&lt;T&gt;(_ value: T) throws -&gt; Data where T : Encodable</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">31</td>
+<td class="src"><pre><code class="objc">}</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">32</td>
 <td class="src"><pre><code class="objc">extension JSONEncoder: asEncoder {}</code></pre></td>
 <td class="coverage"></td>
 </tr>
