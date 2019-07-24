@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage line-rate="1.0000000000000000" branch-rate="1.0000000000000000" lines-covered="58" lines-valid="58" branches-covered="0" branches-valid="0" complexity="0.0" timestamp="1563966649" version="Slather 2.4.7">
+  <sources>
+    <source>/Users/maciejgad/Documents/CodableSaveLoad</source>
+  </sources>
+  <packages>
+    <package name="CodableSaveLoad" line-rate="1.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+      <classes>
+        <class name="Delete" filename="CodableSaveLoad/Delete.swift" line-rate="1.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="11" branch="false" hits="12"/>
+            <line number="12" branch="false" hits="12"/>
+            <line number="13" branch="false" hits="12"/>
+            <line number="14" branch="false" hits="12"/>
+            <line number="15" branch="false" hits="12"/>
+            <line number="16" branch="false" hits="12"/>
+            <line number="17" branch="false" hits="12"/>
+            <line number="18" branch="false" hits="1"/>
+            <line number="19" branch="false" hits="11"/>
+            <line number="20" branch="false" hits="11"/>
+            <line number="21" branch="false" hits="11"/>
+            <line number="22" branch="false" hits="11"/>
+            <line number="23" branch="false" hits="11"/>
+            <line number="24" branch="false" hits="12"/>
+            <line number="25" branch="false" hits="12"/>
+          </lines>
+        </class>
+        <class name="Load" filename="CodableSaveLoad/Load.swift" line-rate="1.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="11" branch="false" hits="12"/>
+            <line number="12" branch="false" hits="12"/>
+            <line number="13" branch="false" hits="12"/>
+            <line number="14" branch="false" hits="12"/>
+            <line number="15" branch="false" hits="12"/>
+            <line number="16" branch="false" hits="12"/>
+            <line number="17" branch="false" hits="11"/>
+            <line number="18" branch="false" hits="11"/>
+            <line number="19" branch="false" hits="11"/>
+            <line number="20" branch="false" hits="11"/>
+            <line number="21" branch="false" hits="12"/>
+          </lines>
+        </class>
+        <class name="Save" filename="CodableSaveLoad/Save.swift" line-rate="1.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="11" branch="false" hits="12"/>
+            <line number="12" branch="false" hits="12"/>
+            <line number="13" branch="false" hits="12"/>
+            <line number="14" branch="false" hits="12"/>
+            <line number="15" branch="false" hits="12"/>
+            <line number="16" branch="false" hits="12"/>
+            <line number="17" branch="false" hits="12"/>
+            <line number="18" branch="false" hits="12"/>
+            <line number="19" branch="false" hits="12"/>
+            <line number="20" branch="false" hits="12"/>
+          </lines>
+        </class>
+        <class name="UrlCreators" filename="CodableSaveLoad/UrlCreators.swift" line-rate="1.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="3" branch="false" hits="22"/>
+            <line number="4" branch="false" hits="22"/>
+            <line number="5" branch="false" hits="22"/>
+            <line number="7" branch="false" hits="1"/>
+            <line number="8" branch="false" hits="1"/>
+            <line number="9" branch="false" hits="1"/>
+            <line number="11" branch="false" hits="24"/>
+            <line number="12" branch="false" hits="24"/>
+            <line number="13" branch="false" hits="24"/>
+            <line number="14" branch="false" hits="1"/>
+            <line number="15" branch="false" hits="23"/>
+            <line number="16" branch="false" hits="23"/>
+            <line number="17" branch="false" hits="23"/>
+            <line number="18" branch="false" hits="23"/>
+            <line number="19" branch="false" hits="23"/>
+            <line number="20" branch="false" hits="24"/>
+            <line number="23" branch="false" hits="12"/>
+            <line number="24" branch="false" hits="12"/>
+            <line number="25" branch="false" hits="1"/>
+            <line number="26" branch="false" hits="11"/>
+            <line number="27" branch="false" hits="11"/>
+            <line number="28" branch="false" hits="12"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>
