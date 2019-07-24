@@ -1,5 +1,5 @@
 import XCTest
-@testable import CodableSaveLoad
+import CodableSaveLoad
 
 class CodableSaveLoadTests: XCTestCase {
     

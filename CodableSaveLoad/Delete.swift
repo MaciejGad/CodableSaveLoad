@@ -3,7 +3,7 @@ import PromiseKit
 
 extension Encodable {
     
-    @discardableResult static func delete(
+    @discardableResult public static func delete(
         name: String = "\(Self.self)",
         extention: String = "json",
         urlCreator: (String, String) throws -> URL = documentUrl(name:extention:),

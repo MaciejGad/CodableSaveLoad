@@ -2,7 +2,7 @@ import Foundation
 import PromiseKit
 
 extension Decodable {
-    static func load(
+    public static func load(
         name: String = "\(Self.self)",
         extention: String = "json",
         urlCreator: (String, String) throws -> URL = documentUrl(name:extention:),
@@ -21,7 +21,8 @@ extension Decodable {
     }
 }
 
-protocol asDecoder {
+public protocol asDecoder {
     func decode<T>(_ type: T.Type, from data: Data) throws -> T where T : Decodable
 }
+
 extension JSONDecoder: asDecoder {}

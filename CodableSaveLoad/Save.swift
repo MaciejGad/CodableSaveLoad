@@ -2,7 +2,7 @@ import Foundation
 import PromiseKit
 
 extension Encodable {
-    @discardableResult func save(
+    @discardableResult public func save(
         name: String = "\(Self.self)",
         extention: String = "json",
         urlCreator: (String, String) throws -> URL = documentUrl(name:extention:),
@@ -20,7 +20,7 @@ extension Encodable {
         }
 }
 
-protocol asEncoder {
+public protocol asEncoder {
     func encode<T>(_ value: T) throws -> Data where T : Encodable
 }
 extension JSONEncoder: asEncoder {}

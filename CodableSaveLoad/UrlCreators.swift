@@ -1,14 +1,14 @@
 import Foundation
 
-func documentUrl(name: String, extention: String) throws -> URL {
+public func documentUrl(name: String, extention: String) throws -> URL {
     return try userDirectory(.documentDirectory, name: name, extention: extention)
 }
 
-func cacheUrl(name: String, extention: String) throws -> URL {
+public func cacheUrl(name: String, extention: String) throws -> URL {
     return try userDirectory(.cachesDirectory, name: name, extention: extention)
 }
 
-func userDirectory(_ directory: FileManager.SearchPathDirectory, name: String, extention: String) throws -> URL {
+public func userDirectory(_ directory: FileManager.SearchPathDirectory, name: String, extention: String) throws -> URL {
     let list = NSSearchPathForDirectoriesInDomains(directory, .userDomainMask, true)
     guard let firstPath = list.first else {
         throw Errors.noDirectory
@@ -20,7 +20,7 @@ func userDirectory(_ directory: FileManager.SearchPathDirectory, name: String, e
 }
 
 extension Bundle {
-    func file(name: String, extention: String) throws -> URL {
+    public func file(name: String, extention: String) throws -> URL {
         guard let url = self.url(forResource: name, withExtension: extention) else {
             throw Errors.noFile
         }
