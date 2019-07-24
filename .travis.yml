@@ -16,6 +16,3 @@ script:
 after_success: 
   - bundle exec slather
   - bash <(curl -s https://codecov.io/bash) -f cobertura.xml -X coveragepy -X gcov -X xcode
-
-
-    
