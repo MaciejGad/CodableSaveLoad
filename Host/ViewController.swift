@@ -2,8 +2,7 @@
 //  ViewController.swift
 //  Host
 //
-//  Created by M Gad on 24/07/2019.
-//  Copyright © 2019 MaciejGad. All rights reserved.
+//  Created by Maciej Gad on 24/07/2019.
 //
 
 import UIKit

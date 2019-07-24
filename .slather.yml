@@ -1,4 +1,3 @@
 coverage_service: cobertura_xml
 xcodeproj: CodableSaveLoad.xcodeproj
-workspace: CodableSaveLoad.xcworkspace
 scheme: CodableSaveLoad
