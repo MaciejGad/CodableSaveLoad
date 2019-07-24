@@ -14,5 +14,5 @@ This micro-framework helps loading & saving Codable data to JSON files.
   s.source       = { :git => "https://github.com/MaciejGad/CodableSaveLoad.git", :tag => 'v1.0' }
   s.source_files  =  "CodableSaveLoad/*.swift"
   s.swift_version = "4.2"
-
+  s.dependency  "PromiseKit", "~> 6.0"
 end
