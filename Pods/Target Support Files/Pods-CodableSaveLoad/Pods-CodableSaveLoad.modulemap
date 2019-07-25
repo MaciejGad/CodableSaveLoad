@@ -1,6 +1,0 @@
-framework module Pods_CodableSaveLoad {
-  umbrella header "Pods-CodableSaveLoad-umbrella.h"
-
-  export *
-  module * { export * }
-}
