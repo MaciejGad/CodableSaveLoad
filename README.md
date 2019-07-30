@@ -60,3 +60,7 @@ and then call
 and import 
 
 >`import CodableSaveLoad`
+
+# Hall Of Fame
+
+[![](https://sourcerer.io/fame/MaciejGad/MaciejGad/CodableSaveLoad/images/0)](https://sourcerer.io/fame/MaciejGad/MaciejGad/CodableSaveLoad/links/0)[![](https://sourcerer.io/fame/MaciejGad/MaciejGad/CodableSaveLoad/images/1)](https://sourcerer.io/fame/MaciejGad/MaciejGad/CodableSaveLoad/links/1)[![](https://sourcerer.io/fame/MaciejGad/MaciejGad/CodableSaveLoad/images/2)](https://sourcerer.io/fame/MaciejGad/MaciejGad/CodableSaveLoad/links/2)[![](https://sourcerer.io/fame/MaciejGad/MaciejGad/CodableSaveLoad/images/3)](https://sourcerer.io/fame/MaciejGad/MaciejGad/CodableSaveLoad/links/3)[![](https://sourcerer.io/fame/MaciejGad/MaciejGad/CodableSaveLoad/images/4)](https://sourcerer.io/fame/MaciejGad/MaciejGad/CodableSaveLoad/links/4)[![](https://sourcerer.io/fame/MaciejGad/MaciejGad/CodableSaveLoad/images/5)](https://sourcerer.io/fame/MaciejGad/MaciejGad/CodableSaveLoad/links/5)[![](https://sourcerer.io/fame/MaciejGad/MaciejGad/CodableSaveLoad/images/6)](https://sourcerer.io/fame/MaciejGad/MaciejGad/CodableSaveLoad/links/6)[![](https://sourcerer.io/fame/MaciejGad/MaciejGad/CodableSaveLoad/images/7)](https://sourcerer.io/fame/MaciejGad/MaciejGad/CodableSaveLoad/links/7)
