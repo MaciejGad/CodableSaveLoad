@@ -1,5 +1,6 @@
 vendor
 .bundle
+CodableSaveLoad.xcodeproj/xcshareddata/xcschemes/CodableSaveLoad-Package.xcscheme
 
 # Created by https://www.gitignore.io/api/swift,xcode,osx
 # Edit at https://www.gitignore.io/?templates=swift,xcode,osx
