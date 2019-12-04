@@ -11,7 +11,7 @@ install:
     
 script:
     - swift build
-    - xcodebuild test -scheme CodableSaveLoad -destination 'platform=iOS Simulator,name=iPhone SE'  | xcpretty
+    - xcodebuild test -scheme CodableSaveLoad -destination 'platform=iOS Simulator,name=iPhone 8'  | xcpretty
     - bundle exec slather coverage -s --scheme CodableSaveLoad CodableSaveLoad.xcodeproj
 
 after_success: 
